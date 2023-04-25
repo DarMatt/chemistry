@@ -1,0 +1,196 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.footer__list1 {
+  margin-right: 42px;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  color: #0F1217;
+}
+
+.footer__conect {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: #0F1217;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+.footer__icons {
+  display: flex;
+}
+
+.footer__icon-link {
+  width: 100%;
+  max-width: 52px;
+  margin-right: 26px;
+}
+
+.footer__icon-link:last-child {
+  margin-right: 0px;
+}
+
+.footer__icon {
+  width: 100%;
+  max-width: 52px;
+  min-width: 42px;
+  object-fit: contain;
+}
+
+.footer__instagram {
+  width: 100%;
+  max-width: 52px;
+  min-width: 42px;
+  object-fit: contain;
+}
+
+.footer__logo {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1322px) {
+  .footer__icon-link {
+    margin-right: 15px;
+  }
+
+  .footer__contact {
+    margin-left: 0px;
+  }
+
+  .footer__nav {
+    margin-left: 20px;
+  }
+
+  .footer__list1 {
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1215px) {
+  .footer__icon-link {
+    max-width: 48px;
+  }
+
+  .footer__conect {
+    font-size: 17px;
+  }
+
+  .footer__item {
+    font-size: 17px;
+  }
+
+  .footer__icons {
+    position: absolute;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .footer__conect {
+    font-size: 16px;
+  }
+
+  .footer__item {
+    font-size: 16px;
+  }
+
+  .footer__icon-link {
+    max-width: 45px;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .footer__conect {
+    font-size: 13px;
+  }
+
+  .footer__item {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+
+  .footer__logo {
+    width: 140px;
+  }
+
+  .footer__icon {
+    min-width: 30px;
+  }
+
+  .footer__instagram {
+    min-width: 30px;
+  }
+
+  .footer__icon-link {
+    max-width: 31px;
+  }
+
+  .footer__icon-link {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .footer__conect {
+    font-size: 11px;
+    margin-bottom: 0;
+    line-height: 15px;
+  }
+
+  .footer__contact {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer__icons {
+    bottom: 35px;
+  }
+
+  .footer__item {
+    font-size: 11px;
+  }
+
+  .footer__icon-link {
+    margin-right: 8px;
+    max-width: 29px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .footer__nav {
+    margin-left: 0;
+  }
+
+  .footer__item {
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,223 @@
+.contact {
+  padding: 120px 0;
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 140%;
+  color: #0F1217;
+  margin-bottom: 32px;
+}
+
+.contact__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.contact__img-wrapper {
+  width: 100%;
+}
+
+.contact__img {
+  margin-right: 80px;
+  object-fit: contain;
+  width: 100%;
+  max-width: 576px;
+}
+
+.contact__form-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 46px 10px;
+  background: #BBDDF6;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 493px;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
+}
+
+.contact__form-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #0F1217;
+  padding-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 413px;
+}
+
+.contact__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #0F1217;
+  padding-bottom: 24px;
+  max-width: 413px;
+}
+
+.name-input,
+.tel-input {
+  display: block;
+  width: 100%;
+  max-width: 413px;
+  height: 61px;
+  background: #FFF;
+  border-radius: 18px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #0F1217;
+}
+
+.contact__submit-btn {
+  display: block;
+  margin-top: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFF;
+  width: 287px;
+  height: 80px;
+  background: #1279CE;
+  border-radius: 48px;
+}
+
+.contact__btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+}
+
+.contact__btn-label {
+  font-family: 'Nunito';
+  font-size: 24px;
+  padding-left: 10px;
+  color: #0F1217;
+}
+
+.contact__btn-single {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+.contact__btn-team {
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+.unselected-single {
+  background: url(../images/check-box-unselected.svg) repeat 0 0;
+}
+.selected-single {
+  background: url(../images/check-box-selected.svg) repeat 0 0;
+}
+.unselected-team {
+  background: url(../images/check-box-unselected.svg) repeat 0 0;
+}
+.selected-team {
+  background: url(../images/check-box-selected.svg) repeat 0 0;
+}
+
+@media screen and (max-width: 1215px) {
+  .contact__form-inner {
+    padding: 35px 20px;
+  }
+
+  .contact__title {
+    font-size: 47px;
+  }
+
+  .contact__form-title {
+    font-size: 28px;
+    padding-bottom: 25px;
+  }
+
+  .contact__label {
+    font-size: 20px;
+    max-width: 390px;
+    padding-bottom: 20px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  .contact__submit-btn {
+    margin-top: 20px;
+    width: 255px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .contact {
+    padding: 60px 0;
+  }
+
+  .contact__title {
+    font-size: 40px;
+  }
+
+  .contact__submit-btn {
+    max-width: 230px;
+    font-size: 18px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+
+  .contact__title {
+    font-size: 31px;
+  }
+
+  .contact__inner {
+    flex-direction: column;
+  }
+
+  .contact__img {
+    max-width: 530px;
+  }
+
+  .contact__submit-btn {
+    max-width: 200px;
+    font-size: 15px;
+    height: 50px;
+  }
+
+  .contact__form-title {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+
+  .contact__label {
+    font-size: 16px;
+    max-width: 385px;
+    padding-bottom: 15px;
+  }
+
+  .contact__submit-btn {
+    margin-top: 10px;
+  }
+}

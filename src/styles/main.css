@@ -1,0 +1,41 @@
+@import './_reset.css';
+@import './header.css';
+@import './preview.css';
+@import './numbers.css';
+@import './sections.css';
+@import './lessons.css';
+@import './road-map.css';
+@import './about-me.css';
+@import './reviews.css';
+@import './price.css';
+@import './contact.css';
+@import './footer.css';
+@import './modal.css';
+@import './burger.css';
+
+.wrapper {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 16px 120px;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1025px) {
+    .wrapper {
+        padding: 16px 50px;
+    }
+}
+
+@media screen and (max-width: 704px) {
+    .wrapper {
+        padding: 16px 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+.wrapper {
+    padding: 16px 13px;
+}
+}

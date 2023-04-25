@@ -1,0 +1,183 @@
+.main__preview {
+  display: flex;
+  padding: 80px 0 100px;
+}
+
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: -40px;
+  z-index: 1;
+}
+
+.preview__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 140%;
+  color: #0F1217;
+  white-space: nowrap;
+  padding-bottom: 12px;
+}
+
+.preview__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #0F1217;
+  padding-bottom: 46px;
+}
+
+.preview__img-inner {
+  width: 132%;
+}
+
+.preview__img {
+  width: 100%;
+  max-width: 614px;
+  min-width: 300px;
+  object-fit: contain;
+}
+
+.preview__btn {
+  background-color: #1279CE;
+  border-radius: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #fff;
+  max-width: 287px;
+  height: 80px;
+}
+
+
+@media screen and (max-width: 1215px) {
+  .preview__title {
+    font-size: 72px;
+  }
+
+  .preview__subtitle {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+
+  .preview__btn {
+    max-width: 255px;
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 1025px) {
+  .preview__wrapper {
+    margin-right: -90px;
+  }
+
+  .main__preview {
+    padding: 50px 0 80px;
+  }
+
+  .preview__title {
+    font-size: 55px;
+  }
+
+  .preview__img {
+    min-width: 265px;
+  }
+
+  .preview__subtitle {
+    font-size: 15px;
+    padding-bottom: 35px;
+  }
+
+  .preview__btn {
+    max-width: 230px;
+    font-size: 18px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .main__preview {
+    padding: 40px 0 50px;
+  }
+
+  .preview__title {
+    font-size: 45px;
+  }
+
+  .preview__subtitle {
+    font-size: 12px;
+    padding-bottom: 25px;
+  }
+
+  .preview__btn {
+    max-width: 200px;
+    font-size: 15px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .preview__img {
+    min-width: 200px;
+  }
+
+  .preview__wrapper {
+    margin-right: -30px;
+  }
+
+  .preview__title {
+    font-size: 35px;
+  }
+
+  .preview__subtitle {
+    font-size: 10px;
+    padding-bottom: 15px;
+  }
+
+  .preview__btn {
+    max-width: 175px;
+    font-size: 13px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main__preview {
+    position: relative;
+    flex-direction: column-reverse;
+  }
+
+  .preview__title {
+    position: absolute;
+    top: 5px;
+    font-size: 30px;
+  }
+
+  .preview__subtitle {
+    font-size: 9px;
+  }
+
+  .preview__img {
+    min-width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .preview__img-inner {
+    width: 100%;
+  }
+
+  .preview__wrapper {
+    position: static;
+    margin-right: 0;
+  }
+
+  .preview__subtitle {
+    font-size: 10px;
+  }
+
+}

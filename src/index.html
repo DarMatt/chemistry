@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" href="./images/favicon.svg">
+  <title>Репетитор з хімії</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("5506OAJ5i_wFxFz8h");
+    })();
+  </script>
+</head>
+
+<body>
+
+  <div id="wrapper" class="wrapper">
+    <header class="header">
+      <img src="./images/logo.svg" alt="логотип" class="header__logo">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#sections" class="nav__link">Розділи</a></li>
+          <li class="nav__item"><a href="#lessons" class="nav__link">Заняття</a></li>
+          <li class="nav__item"><a href="#about-me" class="nav__link">Про себе</a></li>
+          <li class="nav__item"><a href="#reviews" class="nav__link">Відгуки</a></li>
+          <li class="nav__item"><a href="#price" class="nav__link">Вартість</a></li>
+        </ul>
+      </nav>
+      <div class="header__tel-inner">
+        <a href="tel:+38 050 40 11 043" class="header__tel">+38 050 40 11 043</a>
+      </div>
+      <button type="button" class="header__burger">
+        <img src="./images/burger.svg" alt="бургер меню" class="burger__button">
+      </button>
+
+      <div class="burger">
+        <nav class="burger__nav">
+          <ul class="burger__list">
+            <a href="tel:+38 050 40 11 043" class="burger__tel">+38 050 40 11 043</a>
+            <li class="burger__item"><a href="#sections" class="burger__link">Розділи</a></li>
+            <li class="burger__item"><a href="#lessons" class="burger__link">Заняття</a></li>
+            <li class="burger__item"><a href="#about-me" class="burger__link">Про себе</a></li>
+            <li class="burger__item"><a href="#reviews" class="burger__link">Відгуки</a></li>
+            <li class="burger__item"><a href="#price" class="burger__link">Вартість</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="burger-btn-inner">
+          <img src="./images/cross.svg" alt="закрити" class="burger__close-btn"></button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__preview preview">
+        <div class="preview__wrapper">
+          <h1 class="preview__title">Репетитор з хімії</h1>
+          <p class="preview__subtitle">
+            Викладач високого рівня кваліфікації, кандидат фармацевтичних наук, доцент та
+            методист. Мої заняття не базуються на нудних лекціях, сухої теорії<br> та застарілих методах навчання.
+            Орієнтуюся на повне розуміння учнем матеріалу, та якісний результат.
+          </p>
+          <button class="preview__btn">
+            Залишити Заявку
+          </button>
+        </div>
+        <div class="preview__img-inner">
+          <img src="./images/preview.jpeg" alt="таблиця Менделєєва" class="preview__img">
+        </div>
+
+        <div class="modal__bg-container">
+          <section class="modal">
+            <div class="modal__title-inner">
+              <h2 class="modal__title">
+                Заповніть форму та я зв'яжусь з вами
+              </h2>
+              <button class="modal__close-button"><img src="./images/cross.svg" alt="закрити"
+                  class="modal__close-btn"></button>
+            </div>
+            <div class="modal__wrapper">
+              <div class="modal__inner">
+                <form action="submit" class="modal__form" onsubmit="sendEmail(event)">
+                  <label for="name" class="modal__label">
+                    Ім’я
+                    <input name="name" type="text" id="name" class="modal__name-input modal-input"
+                      placeholder="Введіть своє ім'я" />
+                  </label>
+
+                  <label for="tel" class="modal__label">
+                    Телефон
+                    <input name="tel" type="tel" id="tel" class="modal__tel-input modal-input" value="+380" />
+                  </label>
+
+                  <label for="info" class="modal__label">
+                    Додаткова інформація
+                    <textarea name="info" id="info" class="modal__info-input modal-input"
+                      placeholder="Надайте додаткову інформацію якщо вважаєте за потрібне"></textarea>
+                  </label>
+                  <button type="submit" id="submit-btn" class="modal__submit-btn">Залишити заявку</button>
+                </form>
+              </div>
+              <div class="modal__img-inner">
+                <img src="./images/modal.svg" alt="зв'яжусь з вами" class="modal__img">
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+      </section>
+
+      <section class="main__numbers numbers">
+        <div class="numbers__box">
+          <h2 class="numbers__title">20</h2>
+          <p class="numbers__subtitle">
+            <strong>Років досвіду</strong> як викладача та методиста у фармацевтичному та медичному університетах.
+          </p>
+        </div>
+        <div class="numbers__box">
+          <h2 class="numbers__title">100+</h2>
+          <p class="numbers__subtitle">
+            <strong>Школярів,</strong> які успішно склали ЗНО, SAT, Test AS, ДПА та проміжні контрольні роботи протягом
+            навчальних років.
+          </p>
+        </div>
+        <div class="numbers__box">
+          <h2 class="numbers__title">300+</h2>
+          <p class="numbers__subtitle">
+            <strong>Студентів</strong> фармацевтичних, медичних та інших вузів успішно підготовлених до сесії, дипломних
+            робіт та срізів
+            знань.
+          </p>
+        </div>
+      </section>
+
+      <section class="sections" id="sections">
+        <h2 class="sections__title">
+          Охоплюю такі розділи:
+        </h2>
+        <img id="sections-img" src="./images/sections.jpeg" alt="розділи хімії" class="sections__img">
+      </section>
+
+      <section id="lessons" class="lessons">
+        <h2 class="lessons__title">
+          Як проходять заняття
+        </h2>
+        <div class="lessons__content">
+          <div class="lessons__img-wrapper">
+            <img src="./images/lessons-main.svg" alt="діти на заняттях" class="lessons__img">
+          </div>
+          <div class="lessons__desc-inner">
+            <div class="lessons__desc-box">
+              <div class="lessons_pic-wrapper">
+                <img src="./images/lessons1.svg" alt="групові заняття" class="lessons_pic">
+              </div>
+              <p class="lessons__box-text">
+                Заняття бувають: <strong>персональні, дуетні та групові</strong>
+              </p>
+            </div>
+            <div class="lessons__desc-box">
+              <div class="lessons_pic-wrapper">
+                <img src="./images/lessons2.svg" alt="онлайн платформи" class="lessons_pic">
+              </div>
+              <p class="lessons__box-text">
+                На будь-якій зручній вам <strong>платформі</strong>
+              </p>
+            </div>
+            <div class="lessons__desc-box">
+              <div class="lessons_pic-wrapper">
+                <img src="./images/lessons3.svg" alt="сплануємо графік" class="lessons_pic">
+              </div>
+              <p class="lessons__box-text">
+                Разом сплануємо <strong>індивідуальний графік</strong>
+              </p>
+            </div>
+            <div class="lessons__desc-box">
+              <div class="lessons_pic-wrapper">
+                <img src="./images/lessons4.svg" alt="тривалість занятть" class="lessons_pic">
+              </div>
+              <p class="lessons__box-text">
+                Підберемо зручну <strong>тривалість занятть</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="road-map">
+        <h2 class="road-map__title">Road map заняття</h2>
+        <img id="road-map-img" src="./images/road-map.svg" alt="Road map заняття" class="road-map__img">
+        <button class="road-map__btn">
+          Записатись
+        </button>
+      </section>
+
+      <section id="about-me" class="about-me">
+        <div class="about-me__img-wrapper">
+          <img src="./images/about-me.jpeg" alt="фото викладача" class="about-me__img">
+        </div>
+        <div class="about-me__text-inner">
+          <p class="about-me__text">
+            Закінчила з відзнакою <strong>Харківський Фармацевтичний університет,</strong> одержала ступінь кандидата
+            фармацевтичних наук
+            та вчене звання доцента.
+          </p>
+          <p class="about-me__text">
+            Викладаю різні напрямки хімії у <strong>фармацевтичному</strong> та <strong>медичному</strong>
+            університетах.
+          </p>
+          <p class="about-me__text">
+            Маю наукові статті, методичні видання, розробила программи для <strong>підготовки учнів</strong> до ДПА,
+            ЗНО,
+            вступних іспитів, кроку та сессій.
+          </p>
+          <p class="about-me__text">
+            Пройшла підвищення кваліфікації з <strong>дистанційного навчання.</strong> Одержую задоволення від своєї
+            роботи та мотивую
+            здобувачів освіти.
+          </p>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <h2 class="reviews__title">
+          Відгуки
+        </h2>
+        <div class="reviews__boxs-inner">
+          <div class="reviews__box">
+            <div class="reviews__box-inner">
+              <img src="./images/reviews1.png" alt="фото Марії" class="reviews__img">
+              <div class="reviews__header">
+                <span class="reviews__name">
+                  Марія Семоненко
+                </span>
+                <span class="reviews__desc">
+                  Студєнт НФаУ
+                </span>
+              </div>
+            </div>
+            <p class="reviews__text">
+              Оксана Аркадіївна – дивовижний репетитор. Крім незаперечних професійних якостей, хотілося б відзначити
+              особливий підхід до викладання та вміння подати навіть найнепростіший матеріал у захоплюючій та доступній
+              формі.
+            </p>
+          </div>
+
+          <div class="reviews__box">
+            <div class="reviews__box-inner">
+              <img src="./images/reviews2.png" alt="фото Кирила" class="reviews__img">
+              <div class="reviews__header">
+                <span class="reviews__name">
+                  Кирил Любець
+                </span>
+                <span class="reviews__desc">
+                  Випускник, абітурієнт
+                </span>
+              </div>
+            </div>
+            <p class="reviews__text">
+              Завдяки Оксні Аркадіївні я успішно склав ЗНО з хімії та можу вступити до ВУЗу який мені довподоби. Також
+              вона підготувала мене до вступних іспитів.
+            </p>
+          </div>
+
+          <div class="reviews__box">
+            <div class="reviews__box-inner">
+              <img src="./images/reviews3.png" alt="фото Юлії" class="reviews__img">
+              <div class="reviews__header">
+                <span class="reviews__name">
+                  Юлія Галич
+                </span>
+                <span class="reviews__desc">
+                  Мати школярки
+                </span>
+              </div>
+            </div>
+            <p class="reviews__text">
+              Моя донька хотіла піти в клас із нахилом на вивчення хімії, але недотягувала за рівнем. Мені порадили
+              репетитора Оксану Аркадіївну, після двох місяців занять із нею, у моєї доньки підтягнувся рівень у хімії і
+              вона успішно вступила до класу.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="price" class="price">
+        <h2 class="prise__title">
+          Вартість занять
+        </h2>
+        <p class="prise__desc">
+          Індивідуальні заняття — це виключно персональний підхід до навчального процесу. Вся моя увага буде
+          сконцентрована лише на вас.
+        </p>
+        <div class="price__inner">
+
+          <div class="price__box">
+            <div class="price__box-inner">
+              <img src="./images/price1.svg" alt="Індивідуальні" class="price__img">
+              <div class="price__header">
+                <span class="price__name">
+                  Індивідуальні
+                </span>
+                <span class="price__number">
+                  220 ₴
+                </span>
+              </div>
+            </div>
+            <button class="price__btn price__btn-single">
+              Записатись
+            </button>
+          </div>
+
+          <div class="price__box">
+            <div class="price__box-inner">
+              <img src="./images/price2.svg" alt="Групові" class="price__img">
+              <div class="price__header">
+                <span class="price__name">
+                  Групові
+                </span>
+                <span class="price__number">
+                  140 ₴
+                </span>
+              </div>
+            </div>
+            <button class="price__btn  price__btn-team">
+              Записатись
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__title">
+          Заповніть форму<br>та я зв'яжусь з вами
+        </h2>
+        <div class="contact__inner">
+          <div class="contact__img-wrapper">
+            <img src="./images/contact.svg" alt="зв'язок" class="contact__img">
+          </div>
+          <div class="contact__form-inner">
+            <h3 class="contact__form-title">
+              Вкажіть свої данні
+            </h3>
+            <form action="submit" class="contact__form form" onsubmit="sendEmail2(event)">
+
+              <label for="name" class="contact__label">
+                Ім’я
+                <input name="name" type="text" id="name" class="name-input" placeholder="Введіть своє ім'я" />
+              </label>
+
+              <label for="tel" class="contact__label">
+                Телефон
+                <input name="tel" type="tel" id="tel" class="tel-input" value="+380" />
+              </label>
+
+              <div>
+                <button type="button" class="contact__btn">
+                  <div class="contact__btn-single unselected-single"></div>
+                  <span class="contact__btn-label single-label">Індивідуальні заняття</span>
+                </button>
+              </div>
+              <div>
+                <button type="button" class="contact__btn">
+                  <div class="contact__btn-team unselected-team"></div>
+                  <span class="contact__btn-label team-label">Груповi заняття</span>
+                </button>
+              </div>
+              <button type="submit" id="submit-btn" class="contact__submit-btn">Залишити заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./images/logo.svg" alt="логотип" class="footer__logo">
+      <section class="footer__nav">
+        <ul class="footer__list1">
+          <li class="footer__item"><a href="#about-me" class="footer__link">Про себе</a></li>
+          <li class="footer__item"><a href="#reviews" class="footer__link">Відгуки</a></li>
+          <li class="footer__item"><a href="#price" class="footer__link">Вартість</a></li>
+        </ul>
+        <ul class="footer__list1">
+          <li class="footer__item"><a href="#sections" class="footer__link">Розділи</a></li>
+          <li class="footer__item"><a href="#lessons" class="footer__link">Заняття</a></li>
+          <li class="footer__item"><a href="#wrapper" class="footer__link shipping-form">Зворотна форма</a></li>
+        </ul>
+      </section>
+      <section class="footer__contact">
+
+        <a href="tel:+380504011043" class="footer__conect">
+          +38 050 40 11 043
+        </a>
+        <a href="mailto:oksanabrizi69@gmail.com" class="footer__conect">
+          oksanabrizi69@gmail.com
+        </a>
+      </section>
+      <div class="footer__icons">
+        <a href="https://t.me/+380504011043" target="_blank" class="footer__icon-link">
+          <img src="./images/telegram.svg" alt="telegram" class="footer__icon">
+        </a>
+        <a href="https://wa.me/380504011043" target="_blank" class="footer__icon-link">
+          <img src="./images/whatsapp.svg" alt="whatsapp" class="footer__icon">
+        </a>
+        <a href="https://instagram.com/brizitskay_oksana?igshid=YmMyMTA2M2Y=" target="_blank" class="footer__icon-link">
+          <img src="./images/instagram.svg" alt="instagram" class="footer__instagram">
+        </a>
+        <a href="viber://add?number=%2B380504011043" target="_blank" class="footer__icon-link">
+          <img src="./images/viber.svg" alt="viber" class="footer__icon">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
