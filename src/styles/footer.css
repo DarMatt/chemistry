@@ -160,16 +160,26 @@
   }
 }
 
+@media screen and (max-width: 768px) { 
+  .footer {
+    height: 160px;
+  }
+  .footer__contact {
+    position: absolute;
+    top: 50px;
+  }
+  .footer__icons {
+    top: 125px;
+  }
+}
+
 @media screen and (max-width: 530px) {
   .footer__conect {
-    font-size: 11px;
-    margin-bottom: 0;
     line-height: 15px;
   }
 
   .footer__contact {
     position: absolute;
-    bottom: 0;
   }
 
   .footer__icons {
