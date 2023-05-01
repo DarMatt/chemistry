@@ -94,7 +94,7 @@
 
   .numbers__box {
     margin-right: 0;
-    width: 100%;
+    width: -webkit-fill-available;
     height: 145px;
     margin-bottom: 10px;
   }

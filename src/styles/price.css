@@ -93,6 +93,7 @@
 }
 
 .price__btn {
+  all: unset;
   width: 287px;
   height: 80px;
   background: #1279CE;

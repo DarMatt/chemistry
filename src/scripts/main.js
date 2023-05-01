@@ -66,7 +66,7 @@ burger_btn.addEventListener('click', () => {
 });
 
 burger_close.addEventListener('click', () => {
-  burger.style.transform = 'translateY(-100%)';
+  burger.style.transform = 'translateY(-105%)';
 });
 
 window.addEventListener('resize', function () {
@@ -74,17 +74,17 @@ window.addEventListener('resize', function () {
   console.log(screen.width < medium && screen.width > small)
 
   if (screen.width > medium) {
-    sections_img.src = "./images/sections.jpeg";
-    road_map_img.src = "./images/road-map.svg";
+    sections_img.src = "./src/images/sections.jpeg";
+    road_map_img.src = "./src/images/road-map.svg";
   }
 
   if (screen.width < medium && screen.width > small) {
-    sections_img.src = "./images/sections-medium.svg";
-    road_map_img.src = "./images/road-map-medium.svg";
+    sections_img.src = "./src/images/sections-medium.svg";
+    road_map_img.src = "./src/images/road-map-medium.svg";
   }
   if (screen.width < small) {
-    sections_img.src = "./images/sections-small.svg";
-    road_map_img.src = "./images/road-map-small.svg";
+    sections_img.src = "./src/images/sections-small.svg";
+    road_map_img.src = "./src/images/road-map-small.svg";
   }
 });
 

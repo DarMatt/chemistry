@@ -42,6 +42,7 @@
 }
 
 .preview__btn {
+  all: unset;
   background-color: #1279CE;
   border-radius: 48px;
   font-weight: 700;
@@ -142,6 +143,7 @@
     max-width: 175px;
     font-size: 13px;
     height: 45px;
+    text-align: center;
   }
 }
 

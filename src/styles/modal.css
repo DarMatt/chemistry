@@ -186,6 +186,7 @@
 
   .name-input,
   .tel-input {
+    all: unset;
     max-width: 230px;
     height: 55px;
   }

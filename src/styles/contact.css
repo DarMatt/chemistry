@@ -70,8 +70,9 @@
 
 .name-input,
 .tel-input {
+  all: unset;
   display: block;
-  width: 100%;
+  width: -webkit-fill-available;
   max-width: 413px;
   height: 61px;
   background: #FFF;
@@ -89,6 +90,7 @@
 }
 
 .contact__submit-btn {
+  all: unset;
   display: block;
   margin-top: 22px;
   font-style: normal;

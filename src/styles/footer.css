@@ -19,6 +19,7 @@
 
 .footer__list1 {
   margin-right: 42px;
+  list-style: none;
 }
 
 .footer__item {

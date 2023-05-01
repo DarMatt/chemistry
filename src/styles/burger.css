@@ -9,8 +9,14 @@
   border-radius: 0px 0px 18px 18px;
   z-index: 3;
   padding: 46px 0 26px 20px;
-  transform: translateY(-100%);
+  transform: translateY(-105%);
   transition: transform 0.4s;
+}
+
+.header__burger {
+  display: none;
+  background: transparent;
+  all: unset;
 }
 
 .burger__button {
@@ -53,10 +59,7 @@
 
 .burger-btn-inner {
   background: transparent;
-}
-
-.header__burger {
-  background: transparent;
+  all: unset;
 }
 
 @media screen and (max-width: 415px) {
@@ -64,6 +67,9 @@
     display: block;
   }
 
+  .header__burger {
+    display: block;
+  }
   .burger__button {
     display: block;
   }

@@ -20,6 +20,7 @@
 }
 
 .road-map__btn {
+  all: unset;
   background: #1279CE;
   border-radius: 48px;
   width: 287px;

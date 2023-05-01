@@ -13,6 +13,8 @@
 }
 
 .nav__list {
+  all: unset;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
