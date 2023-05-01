@@ -4,7 +4,7 @@
 
 .numbers__box {
   width: 388px;
-  height: 289px;
+  /* height: 289px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,9 +74,9 @@
 }
 
 @media screen and (max-width: 705px) {
-  .numbers__box {
+  /* .numbers__box {
     height: 200px
-  }
+  } */
 
   .numbers__title {
     font-size: 45px;
@@ -95,7 +95,7 @@
   .numbers__box {
     margin-right: 0;
     width: -webkit-fill-available;
-    height: 145px;
+    /* height: 145px; */
     margin-bottom: 10px;
   }
 }
